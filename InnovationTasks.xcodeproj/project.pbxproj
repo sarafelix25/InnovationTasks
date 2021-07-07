@@ -14,6 +14,7 @@
 		ED1A3B6826963C38008A7E45 /* InnovationTasks.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = ED1A3B6626963C38008A7E45 /* InnovationTasks.xcdatamodeld */; };
 		ED1A3B6A26963C3D008A7E45 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ED1A3B6926963C3D008A7E45 /* Assets.xcassets */; };
 		ED1A3B6D26963C3D008A7E45 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ED1A3B6B26963C3D008A7E45 /* LaunchScreen.storyboard */; };
+		ED1A3B7826963D4A008A7E45 /* TasksTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED1A3B7726963D4A008A7E45 /* TasksTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		ED1A3B6926963C3D008A7E45 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		ED1A3B6C26963C3D008A7E45 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		ED1A3B6E26963C3D008A7E45 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ED1A3B7726963D4A008A7E45 /* TasksTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TasksTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +60,7 @@
 		ED1A3B5C26963C38008A7E45 /* InnovationTasks */ = {
 			isa = PBXGroup;
 			children = (
+				ED1A3B7626963D08008A7E45 /* Controllers */,
 				ED1A3B5D26963C38008A7E45 /* AppDelegate.swift */,
 				ED1A3B5F26963C38008A7E45 /* SceneDelegate.swift */,
 				ED1A3B6126963C38008A7E45 /* ViewController.swift */,
@@ -68,6 +71,14 @@
 				ED1A3B6626963C38008A7E45 /* InnovationTasks.xcdatamodeld */,
 			);
 			path = InnovationTasks;
+			sourceTree = "<group>";
+		};
+		ED1A3B7626963D08008A7E45 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				ED1A3B7726963D4A008A7E45 /* TasksTableViewController.swift */,
+			);
+			path = Controllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -141,6 +152,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				ED1A3B6226963C38008A7E45 /* ViewController.swift in Sources */,
+				ED1A3B7826963D4A008A7E45 /* TasksTableViewController.swift in Sources */,
 				ED1A3B5E26963C38008A7E45 /* AppDelegate.swift in Sources */,
 				ED1A3B6026963C38008A7E45 /* SceneDelegate.swift in Sources */,
 				ED1A3B6826963C38008A7E45 /* InnovationTasks.xcdatamodeld in Sources */,
