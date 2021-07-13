@@ -157,6 +157,19 @@
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="gTj-aq-b9c" id="YmO-oS-Nk7">
                                     <rect key="frame" x="0.0" y="0.0" width="414" height="50"/>
                                     <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="YFh-Ne-fR5">
+                                            <rect key="frame" x="20" y="8" width="348" height="34"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                            <textInputTraits key="textInputTraits"/>
+                                        </textField>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstAttribute="bottom" secondItem="YFh-Ne-fR5" secondAttribute="bottom" constant="8" id="9xO-kG-dqt"/>
+                                        <constraint firstItem="YFh-Ne-fR5" firstAttribute="leading" secondItem="YmO-oS-Nk7" secondAttribute="leading" constant="20" id="LRd-s4-K6L"/>
+                                        <constraint firstAttribute="trailing" secondItem="YFh-Ne-fR5" secondAttribute="trailing" constant="46" id="OqO-AB-384"/>
+                                        <constraint firstItem="YFh-Ne-fR5" firstAttribute="top" secondItem="YmO-oS-Nk7" secondAttribute="top" constant="8" id="VMx-2M-1EV"/>
+                                    </constraints>
                                 </tableViewCellContentView>
                             </tableViewCell>
                         </prototypes>
