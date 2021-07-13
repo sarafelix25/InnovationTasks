@@ -93,14 +93,18 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" title="My Tasks" id="sd5-9w-igB">
-                        <barButtonItem key="rightBarButtonItem" image="plus" catalog="system" id="1OH-IM-MtP"/>
+                        <barButtonItem key="rightBarButtonItem" image="plus" catalog="system" id="1OH-IM-MtP">
+                            <connections>
+                                <segue destination="wGd-Vh-XIj" kind="show" id="m3J-P8-xpJ"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Lnx-bE-GKV" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="611.59420289855075" y="136.60714285714286"/>
         </scene>
-        <!--Table View Controller-->
+        <!--Create Task-->
         <scene sceneID="YOC-Yd-1tA">
             <objects>
                 <tableViewController id="wGd-Vh-XIj" sceneMemberID="viewController">
@@ -117,12 +121,29 @@
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
                             </tableViewCell>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="63i-GO-O5L">
+                                <rect key="frame" x="0.0" y="71.5" width="414" height="43.5"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="63i-GO-O5L" id="3iD-Gv-NtQ">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="gTj-aq-b9c">
+                                <rect key="frame" x="0.0" y="115" width="414" height="43.5"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="gTj-aq-b9c" id="YmO-oS-Nk7">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
                         </prototypes>
                         <connections>
                             <outlet property="dataSource" destination="wGd-Vh-XIj" id="Yje-CB-IJT"/>
                             <outlet property="delegate" destination="wGd-Vh-XIj" id="teI-ch-Oj4"/>
                         </connections>
                     </tableView>
+                    <navigationItem key="navigationItem" title="Create Task" id="Fim-X3-WWC"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="oEM-RD-2F3" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
