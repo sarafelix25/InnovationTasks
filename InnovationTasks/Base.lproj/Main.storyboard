@@ -16,7 +16,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="76" id="5VJ-tr-pf5">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="TaskCell" rowHeight="76" id="5VJ-tr-pf5" customClass="TaskTableViewCell" customModule="InnovationTasks" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="28" width="414" height="76"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="5VJ-tr-pf5" id="kmj-8D-YEb">
@@ -25,12 +25,18 @@
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="09:30" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9d6-0a-0Af">
                                             <rect key="frame" x="20" y="12" width="76" height="36"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" secondItem="9d6-0a-0Af" secondAttribute="height" multiplier="19:9" id="WtN-kV-wxN"/>
+                                            </constraints>
                                             <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="30"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="06/11/2021" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ITY-FF-053">
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="13/07/2021" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ITY-FF-053">
                                             <rect key="frame" x="29.5" y="47" width="57" height="14"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" secondItem="ITY-FF-053" secondAttribute="height" multiplier="57:14" id="jYg-wQ-L3R"/>
+                                            </constraints>
                                             <fontDescription key="fontDescription" style="UICTFontTextStyleCaption2"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
@@ -72,6 +78,13 @@
                                         <constraint firstItem="RzR-c7-qcH" firstAttribute="top" secondItem="kmj-8D-YEb" secondAttribute="top" constant="7" id="tYd-OS-8jm"/>
                                     </constraints>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="categoryNameLabel" destination="06z-CX-TKR" id="K5G-Do-ZxS"/>
+                                    <outlet property="categoryView" destination="RzR-c7-qcH" id="Ip9-Tj-NPg"/>
+                                    <outlet property="dateLabel" destination="ITY-FF-053" id="cGt-U7-83c"/>
+                                    <outlet property="hourLabel" destination="9d6-0a-0Af" id="za2-0l-IiC"/>
+                                    <outlet property="taskDescriptionLabel" destination="BRe-NA-CxA" id="Q6Q-RW-COc"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
