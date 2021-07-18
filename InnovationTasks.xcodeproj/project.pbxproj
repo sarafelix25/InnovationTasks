@@ -20,6 +20,7 @@
 		ED717377269D226700613A32 /* TaskTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED717376269D226700613A32 /* TaskTableViewCell.swift */; };
 		ED71737B269D3EEF00613A32 /* CreateTaskViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED71737A269D3EEF00613A32 /* CreateTaskViewController.swift */; };
 		ED71737E269D42F800613A32 /* TaskDescriptionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED71737D269D42F800613A32 /* TaskDescriptionTableViewCell.swift */; };
+		ED717381269D439000613A32 /* DateTimeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED717380269D439000613A32 /* DateTimeTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +39,7 @@
 		ED717376269D226700613A32 /* TaskTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskTableViewCell.swift; sourceTree = "<group>"; };
 		ED71737A269D3EEF00613A32 /* CreateTaskViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateTaskViewController.swift; sourceTree = "<group>"; };
 		ED71737D269D42F800613A32 /* TaskDescriptionTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskDescriptionTableViewCell.swift; sourceTree = "<group>"; };
+		ED717380269D439000613A32 /* DateTimeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateTimeTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,6 +110,7 @@
 			children = (
 				ED717376269D226700613A32 /* TaskTableViewCell.swift */,
 				ED71737D269D42F800613A32 /* TaskDescriptionTableViewCell.swift */,
+				ED717380269D439000613A32 /* DateTimeTableViewCell.swift */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -185,6 +188,7 @@
 				ED717377269D226700613A32 /* TaskTableViewCell.swift in Sources */,
 				ED1A3B6226963C38008A7E45 /* ViewController.swift in Sources */,
 				ED1A3B7826963D4A008A7E45 /* TasksTableViewController.swift in Sources */,
+				ED717381269D439000613A32 /* DateTimeTableViewCell.swift in Sources */,
 				ED1A3B5E26963C38008A7E45 /* AppDelegate.swift in Sources */,
 				ED1A3B6026963C38008A7E45 /* SceneDelegate.swift in Sources */,
 				ED71737E269D42F800613A32 /* TaskDescriptionTableViewCell.swift in Sources */,

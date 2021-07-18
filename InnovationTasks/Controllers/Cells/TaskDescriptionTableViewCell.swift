@@ -9,4 +9,5 @@ import UIKit
 
 class TaskDescriptionTableViewCell: UITableViewCell {
 
+    @IBOutlet weak var taskDescriptionTextField: UITextField!
 }
