@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		ED170DBB26A50CB8000205AC /* CategoriesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED170DBA26A50CB8000205AC /* CategoriesTableViewController.swift */; };
+		ED170DBF26A50DC2000205AC /* CategoryRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED170DBE26A50DC2000205AC /* CategoryRepository.swift */; };
 		ED1A3B5E26963C38008A7E45 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED1A3B5D26963C38008A7E45 /* AppDelegate.swift */; };
 		ED1A3B6026963C38008A7E45 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED1A3B5F26963C38008A7E45 /* SceneDelegate.swift */; };
 		ED1A3B6226963C38008A7E45 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED1A3B6126963C38008A7E45 /* ViewController.swift */; };
@@ -24,6 +26,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		ED170DBA26A50CB8000205AC /* CategoriesTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoriesTableViewController.swift; sourceTree = "<group>"; };
+		ED170DBE26A50DC2000205AC /* CategoryRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryRepository.swift; sourceTree = "<group>"; };
 		ED1A3B5A26963C38008A7E45 /* InnovationTasks.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = InnovationTasks.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ED1A3B5D26963C38008A7E45 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		ED1A3B5F26963C38008A7E45 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -53,6 +57,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		ED170DBD26A50D89000205AC /* Repositories */ = {
+			isa = PBXGroup;
+			children = (
+				ED170DBE26A50DC2000205AC /* CategoryRepository.swift */,
+			);
+			path = Repositories;
+			sourceTree = "<group>";
+		};
 		ED1A3B5126963C38008A7E45 = {
 			isa = PBXGroup;
 			children = (
@@ -72,6 +84,7 @@
 		ED1A3B5C26963C38008A7E45 /* InnovationTasks */ = {
 			isa = PBXGroup;
 			children = (
+				ED170DBD26A50D89000205AC /* Repositories */,
 				ED1A3B7A269645A3008A7E45 /* Models */,
 				ED1A3B7626963D08008A7E45 /* Controllers */,
 				ED1A3B5D26963C38008A7E45 /* AppDelegate.swift */,
@@ -92,6 +105,7 @@
 				ED717375269D21D500613A32 /* Cells */,
 				ED1A3B7726963D4A008A7E45 /* TasksTableViewController.swift */,
 				ED71737A269D3EEF00613A32 /* CreateTaskViewController.swift */,
+				ED170DBA26A50CB8000205AC /* CategoriesTableViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -188,7 +202,9 @@
 				ED717377269D226700613A32 /* TaskTableViewCell.swift in Sources */,
 				ED1A3B6226963C38008A7E45 /* ViewController.swift in Sources */,
 				ED1A3B7826963D4A008A7E45 /* TasksTableViewController.swift in Sources */,
+				ED170DBB26A50CB8000205AC /* CategoriesTableViewController.swift in Sources */,
 				ED717381269D439000613A32 /* DateTimeTableViewCell.swift in Sources */,
+				ED170DBF26A50DC2000205AC /* CategoryRepository.swift in Sources */,
 				ED1A3B5E26963C38008A7E45 /* AppDelegate.swift in Sources */,
 				ED1A3B6026963C38008A7E45 /* SceneDelegate.swift in Sources */,
 				ED71737E269D42F800613A32 /* TaskDescriptionTableViewCell.swift in Sources */,
