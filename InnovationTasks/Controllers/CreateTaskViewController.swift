@@ -7,9 +7,12 @@
 
 import UIKit
 
-class CreateTaskViewController: UITableViewController {
+class CreateTaskViewController: UITableViewController, UITextFieldDelegate {
     
     private var datePicker: UIDatePicker = UIDatePicker()
+    private var dateFormatter = DateFormatter()
+    private var selectedIndexPath: IndexPath?
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -47,18 +50,52 @@ class CreateTaskViewController: UITableViewController {
         
         let cell = tableView.dequeueReusableCell(withIdentifier: "DateCell", for: indexPath) as! DateTimeTableViewCell
         cell.dateTimeTextField.inputView = datePicker
+        cell.dateTimeTextField.delegate = self
+        cell.dateTimeTextField.inputAccessoryView = accessoryView()
         return cell
     }
     // MARK : - Actions buttons
     @IBAction func tapSaveButton(_ sender: Any) {
         print("Task Saved")
     }
+    
+    // MARK: - UITextFieldDelegate Methods
+    
+    func textFieldDidBeginEditing(_ textField: UITextField) {
+        let cell = textField.superview?.superview as? DateTimeTableViewCell
+        if let dateCell = cell {
+            self.selectedIndexPath = tableView.indexPath(for: dateCell)
+        }
+    }
+    
     // MARK: - UIView Functions
     func accessoryView() -> UIView {
         let toolBar = UIToolbar()
         toolBar.barStyle = .default
         toolBar.isTranslucent = true
         
+        let barItemSpace = UIBarButtonItem(barButtonSystemItem: .flexibleSpace ,
+                                           target: nil,
+                                           action: nil)
+        let doneButton = UIBarButtonItem(title: "Done",
+                                         style: .done ,
+                                         target: self,
+                                         action: #selector(CreateTaskViewController.selectDate))
+        
+        toolBar.setItems([barItemSpace, doneButton], animated: true)
+        toolBar.isUserInteractionEnabled = true
+        toolBar.sizeToFit()
+        
+        return toolBar
+    }
     
+    @objc func selectDate() {
+        if let indexPath = self.selectedIndexPath {
+            let cell = tableView.cellForRow(at: indexPath) as? DateTimeTableViewCell
+            if let dateCell = cell {
+                dateCell.dateTimeTextField.text = dateFormatter.string(from: datePicker.date)
+                self.view.endEditing(true)
+            }
+        }
     }
 }
